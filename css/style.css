@@ -1,0 +1,176 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box; }
+
+li {
+  list-style: none; }
+  li a {
+    text-decoration: none; }
+
+.containerHeader {
+  width: 100%;
+  height: auto;
+  background-color: #83b483;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; }
+  .containerHeader .containerLogo {
+    width: min-content;
+    height: 55px; }
+    .containerHeader .containerLogo .logo {
+      width: 75px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: none; }
+    .containerHeader .containerLogo .logoImg:hover {
+      transition: 1;
+      box-shadow: 8px 8px 24px 0px; }
+  .containerHeader .containerCompra {
+    width: auto;
+    height: 50px; }
+    .containerHeader .containerCompra .compra {
+      width: auto;
+      height: 43px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: none; }
+    .containerHeader .containerCompra .compra:hover {
+      transition: 1;
+      box-shadow: 8px 8px 24px 0px;
+      color: black; }
+    .containerHeader .containerCompra .aCompra:hover {
+      color: white; }
+    .containerHeader .containerCompra .aCompra {
+      color: #080808; }
+    .containerHeader .containerCompra a {
+      list-style: none;
+      text-decoration: none;
+      font-size: 30px; }
+    .containerHeader .containerCompra .compraTitle {
+      width: 300px;
+      height: auto;
+      font-size: 40px;
+      text-align: center;
+      background-color: gray;
+      margin-top: 50px;
+      margin-right: 0;
+      margin-bottom: 0;
+      margin-left: 0; }
+    .containerHeader .containerCompra .compraTexto {
+      width: auto;
+      height: auto;
+      background-color: #83b483;
+      white-space: pre-line; }
+  .containerHeader .containerSucursal {
+    width: auto;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: none; }
+    .containerHeader .containerSucursal .sucursal {
+      width: 110px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: none; }
+    .containerHeader .containerSucursal .sucursal:hover {
+      transition: 1;
+      box-shadow: 8px 8px 24px 0px;
+      color: black; }
+    .containerHeader .containerSucursal .aSucursal:hover {
+      color: white; }
+    .containerHeader .containerSucursal .aSucursal {
+      color: #080808; }
+    .containerHeader .containerSucursal a {
+      list-style: none;
+      text-decoration: none;
+      font-size: 30px; }
+    .containerHeader .containerSucursal .sucursalMaps {
+      font-size: 40px;
+      width: 300px;
+      height: auto;
+      background-color: #b27fc9;
+      margin-top: 50px;
+      margin-right: 0;
+      margin-bottom: 5px;
+      margin-left: 0; }
+  .containerHeader .containerEnvio {
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: none;
+    flex-wrap: none; }
+    .containerHeader .containerEnvio .envioImg {
+      width: auto;
+      height: auto; }
+    .containerHeader .containerEnvio .envioTexto {
+      color: #080808;
+      margin-top: 3px;
+      margin-right: 0;
+      margin-bottom: 0;
+      margin-left: 10px; }
+  .containerHeader .containerWhatsap {
+    width: auto;
+    height: 60px;
+    font-size: 15px;
+    color: #af8585;
+    background-color: #d6d5d5;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: none; }
+    .containerHeader .containerWhatsap .wsp {
+      width: 165px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: none; }
+    .containerHeader .containerWhatsap .imgWsp-tel {
+      width: 20px;
+      height: 20px;
+      margin-top: 0;
+      margin-right: 2px;
+      margin-bottom: 0;
+      margin-left: 5px; }
+
+.rebajaP {
+  width: 100%;
+  height: 40px;
+  font-size: 17px;
+  text-align: center;
+  line-height: 30px;
+  color: #af8585;
+  background-color: #d6d5d5; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-areas: "a1 n2 c3";
+  margin-top: 50px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0; }
+  .grid .box {
+    width: auto;
+    height: 50px;
+    text-align: center; }
+  .grid .box:hover {
+    background-color: #4d4db6; }
+  .grid .a1 {
+    grid-area: a1;
+    width: auto;
+    height: 50px; }

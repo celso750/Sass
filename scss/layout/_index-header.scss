@@ -1,0 +1,142 @@
+li{
+    list-style: none;
+    a{ text-decoration: none;}   
+}.containerHeader {
+    @include tamaños(100%, auto);
+    background-color: $background;
+    display: flex;
+    @include prop-flex(space-between, center, wrap);
+    .containerLogo {
+        @include tamaños(min-content, 55px);
+        .logo {
+            @include tamaños(75px, 50px);
+            display: flex;
+            @include prop-flex(center, center, none);
+        }
+        .logoImg:hover {
+            transition: 1;
+            box-shadow: 8px 8px 24px 0px;
+        }
+    }
+    .containerCompra {
+        @include tamaños(auto, 50px);
+        .compra {
+            @include tamaños(auto, 43px);
+            display: flex;
+            @include prop-flex(center, center, none);
+        }
+        .compra:hover {
+            transition: 1;
+            box-shadow: 8px 8px 24px 0px;
+            color: $color-sombra;
+        }
+        .aCompra:hover {
+            color: $clik-letra;
+        }
+        .aCompra {
+            color: $color-letra;
+        }
+        a {
+            list-style: none;
+            text-decoration: none;
+            font-size: $tamaño-letra-ancla;
+        }
+        .compraTitle {
+            @include tamaños(300px, auto);
+            font-size: 40px;
+            text-align: center;
+            background-color: gray;
+            @include margin(50px, 0, 0, 0);
+        }
+        .compraTexto {
+            @include tamaños(auto, auto);
+            background-color: $background;
+            white-space: pre-line;
+        }
+    }
+    .containerSucursal {
+        @include tamaños(auto, 50px);
+        display: flex;
+        @include prop-flex(flex-start, center, none);
+        .sucursal {
+            @include tamaños(110px, 30px);
+            display: flex;
+            @include prop-flex(center, center, none);
+        }
+        .sucursal:hover {
+            transition: 1;
+            box-shadow: 8px 8px 24px 0px;
+            color: $color-sombra;
+        }
+        .aSucursal:hover {
+            color: $clik-letra;
+        }
+        .aSucursal {
+            color: $color-letra;
+        }
+        a {
+            list-style: none;
+            text-decoration: none;
+            font-size:$tamaño-letra-ancla;
+        }
+        .sucursalMaps {
+            font-size: 40px;
+            @include tamaños(300px, auto);
+            background-color: rgb(178, 127, 201);
+            @include margin(50px, 0, 5px, 0);
+        }
+    }
+    .containerEnvio {
+        @include tamaños(200px, 60px);
+        display: flex;
+        @include prop-flex(center, none, none);
+        .envioImg {
+            @include tamaños(auto, auto);
+        }
+        .envioTexto {
+            color: $color-letra;
+            @include margin(3px, 0, 0, 10px);
+        }
+    }
+    .containerWhatsap {
+        @include tamaños(auto, 60px);
+        font-size: 15px;
+        color: $color-letra-wsp-rebaja;   
+        background-color:$background-wps-rebaja;
+        @include margin(0, 0, 0, 90px);
+        display: flex;
+        @include prop-flex(space-around, center, none);
+        .wsp {
+            @include tamaños(165px, 60px);
+            display: flex;
+            @include prop-flex(center, center, none);
+        }
+        .imgWsp-tel{
+            @include tamaños(20px, 20px);
+            @include margin(0, 2px, 0, 5px);
+        }
+    }
+}
+.rebajaP{
+    @include tamaños(100%,40px);
+    font-size: 17px;
+    text-align: center;
+    line-height: 30px;
+    color: $color-letra-wsp-rebaja;   
+    background-color:$background-wps-rebaja;
+}
+.grid{
+    @include grid(repeat(3,1fr),repeat(1,1fr),"a1 n2 c3");
+    @include margin(50px,0,0,0);
+    .box{
+    @include tamaños(auto,50px);
+    text-align: center;
+    }
+    .box:hover{
+    background-color: rgb(77, 77, 182);
+    }
+    .a1{
+        grid-area: a1;
+        @include tamaños(auto,50px);
+    }
+}
