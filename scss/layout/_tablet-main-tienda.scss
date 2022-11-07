@@ -1,0 +1,128 @@
+@media (max-width:768px) {  
+// main inicio
+.containerinicio{
+    height: 340px;
+    border: 3px solid rgb(0, 0, 0);
+    @include grid(1fr,repeat(2,1fr),"sDeporte sDeporte sDeporte""a1 n2 c3");
+    @include background-img (url(../img/img-inicio/fondo-ropa.jpg),no-repeat,cover,right);
+    
+}
+.flex{
+    display: flex;
+   @include prop-flex(space-between,flex-start,wrap);
+   margin-top: 40px;
+}
+    .a1{
+        grid-area: a1;
+        @include tamaños(auto,40px);
+        @include margin(0,10px,0,0);
+        font-size: $tamanio-letra-ancla;
+        a{
+            color:$color-letra-header-tablet;
+        }
+        a:hover{
+            color:$color-letra-header-tablet;
+        }
+    }
+    .n2{
+        grid-area: n2;
+    }
+    .c3{
+        grid-area: c3;
+    }
+    .sDeporte{
+        grid-area: sDeporte;
+        @include tamaños(50%,auto);
+        display: flex;
+        justify-self: center;
+        .deporteImg{
+            width: 100%;
+            height: auto;
+        }
+    }
+// main tienda elegir sexo
+.tiendaListax {
+    @include grid (repeat(2, 30% 70%), repeat(1, 1fr), "tiendaAncla tiendaImg");
+    .tiendaAncla {
+        grid-area: tiendaAncla;
+        @include tamaños (100%, 100%);
+        background-color: $background-nav-tienda;
+        display: flex;
+        flex-direction: column;
+        @include prop-flex(space-between, center, none);
+        a {
+            color: black;
+            font-size: $font-size-tienda;
+        }
+        .ancla:hover {
+            @include tamaños (auto, auto);
+            transition: none;
+            box-shadow: none;
+        }
+        .ancla2:hover {
+            color: black;
+        }
+    }
+    .tiendaImg {
+        grid-area: tiendaImg;
+        @include tamaños (100%, 100%);
+    }
+}
+.tiendaDiv {
+    @include tamaños(100%, 200px);
+    display: flex;
+    @include prop-flex(center, center, none);
+    .tiendaElegir {
+        @include tamaños(370px, 130px);
+        display: flex;
+        @include prop-flex(center, center, none);
+        font-size: 28px;
+        background-color: $background-titulo-tienda;
+        color: $color-letra-titulo-tienda;
+        box-shadow: -2px 3px 29px 21px rgba(0, 0, 0, 1);
+        -webkit-box-shadow: -2px 3px 29px 21px rgba(0, 0, 0, 1);
+        -moz-box-shadow: -2px 3px 29px 21px rgba(0, 0, 0, 1);
+    }
+}
+.containerSexo {
+    @include tamaños(100%, 300px);
+    display: flex;
+    @include prop-flex(center, center, none);
+    .boxGrids {
+        @include tamaños(80%, 100%);
+        @include grid(repeat(2, 1fr), repeat(1, 1fr), "boxMujer boxHombre");
+        @include prop-flex(center, center, none);
+        background-color: $background-tienda-sexo;
+        .boxMujer {
+            grid-area: boxMujer;
+            @include tamaños(85%, auto);
+            @include prop-flex-self(center, center);
+        }
+        .imgMujer {
+            @include tamaños (100%, auto);
+        }
+        .boxMujer:hover {
+            transition: none;
+            box-shadow: none;
+        }
+    }
+    .boxN {
+        display:  none;
+    }
+    .boxHombre {
+        grid-area: boxHombre;
+        @include tamaños(85%, auto);
+    }
+    .imgHombre {
+        @include tamaños(100%, auto);
+    }
+    .boxHombre:hover {
+        transition: none;
+        box-shadow:none;
+    }
+}
+// maps
+.iframe{
+    width: 100%;
+    height: 300px;
+    }}

@@ -1,0 +1,37 @@
+@media (max-width:360px) {  
+
+.sucursalMaps {
+    font-size: 28px;
+    @include tamaños(auto, auto);
+    display: flex;
+    @include prop-flex(center, none, none);
+    @include margin(50px, 0, 5px, 0);
+    .sucuParrafo {
+        color: black;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+}
+
+
+.compraTitle {
+    @include tamaños(360px, auto);
+    font-size: 28px;
+    @include margin(40px, 0, 5px, 0);
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;  
+    text-decoration: underline;
+
+}
+.compraTexto {
+    @include tamaños(auto,auto);
+    text-align: center;
+    .compraParrafo {
+        background-color: white;
+        text-transform: uppercase;
+    }
+}
+
+
+}

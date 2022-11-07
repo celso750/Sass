@@ -1,0 +1,149 @@
+main {
+    background-color: #958d96;
+}
+
+.gridcars {
+    @include tamaños (100%, 1000px);
+    @include grid(repeat(3, 1fr), repeat(2, 1fr), "cars1 cars2 cars3" "cars4 cars5 cars6");
+    @include prop-flex (center, center, none);
+    gap: 20px;
+}
+
+.cars1 {
+    @include tamaños(240px, 220px);
+    @include margin(0, 0, 50px, 0);
+    @include prop-flex-self(center, center);
+    background-color: white;
+    -webkit-box-shadow: inset 0px 0px 20px 32px rgba(0, 0, 0, 1);
+    -moz-box-shadow: inset 0px 0px 20px 32px rgba(0, 0, 0, 1);
+    box-shadow: inset 0px 0px 20px 32px rgba(0, 0, 0, 1);
+}
+
+.cars2 {
+    grid-area: cars2;
+    @extend .cars1;
+}
+
+.cars3 {
+    grid-area: cars3;
+    @extend .cars1;
+}
+
+.cars4 {
+    grid-area: cars4;
+    @extend .cars1;
+    margin-top: 50px;
+}
+
+.cars5 {
+    grid-area: cars5;
+    @extend .cars1;
+    margin-top: 50px;
+}
+
+.cars6 {
+    grid-area: cars6;
+    @extend .cars1;
+    margin-top: 50px;
+}
+
+img {
+    @include tamaños(110px, auto);
+
+}
+
+.carrito-1 {
+    height: auto;
+    width: auto;
+}
+
+.producto {
+    margin-top: 4px;
+    font-size: 20px;
+    text-align: center;
+    outline-style: double;
+    background-color: white;
+
+    .precio {
+        color: rgb(214, 39, 39);
+        font-size: 30px;
+    }
+}
+
+.containerDescuento {
+    display: flex;
+    @include prop-flex(space-evenly, center, none);
+
+    .precioDescuento {
+        font-size: 15px;
+        text-decoration: line-through;
+    }
+
+    .descuentoOff {
+        background-color: green;
+        text-transform: uppercase;
+    }
+}
+.comprar {
+    @include tamaños(auto, auto);
+    background-color: white;
+    @include margin(7px, 0, 50px, 0);
+    outline-style: double;
+    display: flex;
+    @include prop-flex(space-evenly, none, none);
+
+    button {
+        color: white;
+        background-color: #5e4747;
+    }
+}
+
+.carsAnimation {
+    width: 240px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-animation-name: zoomInDown;
+    animation-name: zoomInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes zoomInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+        transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+        animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+        transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
+}
+
+@keyframes zoomInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+        transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+        animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+        transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
+}

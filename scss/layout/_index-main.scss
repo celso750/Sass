@@ -1,0 +1,41 @@
+
+.containerinicio{
+    border: 2px solid rgb(0, 0, 0);
+    @include grid(repeat(2,1fr),repeat(1,1fr),"a1 n2 c3");
+    @include background-img (url(../img/img-inicio/fondo-ropa.jpg),no-repeat,cover,none);
+    
+}
+.flex{
+    display: flex;
+   @include prop-flex(space-between,flex-start,wrap);
+}
+    .a1{
+        grid-area: a1;
+        @include tamaños(auto,40px);
+        @include margin(0,10px,0,0);
+        font-size: $tamanio-letra-ancla;
+        a{
+            color: white;
+        }
+        a:hover{
+            color: rgb(132, 0, 255);
+        }
+    }
+    .n2{
+        grid-area: n2;
+        @extend.a1;
+    }
+    .c3{
+        grid-area: c3;
+        @extend.a1;
+    }
+.sDeporte{
+    @include tamaños(50%,auto);
+    .deporteImg{
+        width: 100%;
+    }
+}
+.indexImg{
+    @include tamaños(100%,100%);
+    border: 10px solid black;
+}

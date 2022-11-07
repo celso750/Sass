@@ -8,19 +8,28 @@ li {
   li a {
     text-decoration: none; }
 
+.rebajaP {
+  width: 100%;
+  height: 30px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 30px;
+  color: #834f4f;
+  background-color: #b2b2b2; }
+
 .containerHeader {
   width: 100%;
-  height: auto;
+  height: 100px;
   background-color: #83b483;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap; }
   .containerHeader .containerLogo {
-    width: min-content;
+    width: 112px;
     height: 55px; }
     .containerHeader .containerLogo .logo {
-      width: 75px;
+      width: 112px;
       height: 50px;
       display: flex;
       justify-content: center;
@@ -51,16 +60,6 @@ li {
       list-style: none;
       text-decoration: none;
       font-size: 30px; }
-    .containerHeader .containerCompra .compraTitle {
-      width: 300px;
-      height: auto;
-      font-size: 40px;
-      text-align: center;
-      background-color: gray;
-      margin-top: 50px;
-      margin-right: 0;
-      margin-bottom: 0;
-      margin-left: 0; }
     .containerHeader .containerCompra .compraTexto {
       width: auto;
       height: auto;
@@ -92,15 +91,6 @@ li {
       list-style: none;
       text-decoration: none;
       font-size: 30px; }
-    .containerHeader .containerSucursal .sucursalMaps {
-      font-size: 40px;
-      width: 300px;
-      height: auto;
-      background-color: #b27fc9;
-      margin-top: 50px;
-      margin-right: 0;
-      margin-bottom: 5px;
-      margin-left: 0; }
   .containerHeader .containerEnvio {
     width: 200px;
     height: 60px;
@@ -118,21 +108,16 @@ li {
       margin-bottom: 0;
       margin-left: 10px; }
   .containerHeader .containerWhatsap {
-    width: auto;
-    height: 60px;
-    font-size: 15px;
-    color: #af8585;
-    background-color: #d6d5d5;
-    margin-top: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-left: 90px;
+    width: 40%;
+    height: 40px;
+    font-size: 14px;
+    color: #834f4f;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: none; }
     .containerHeader .containerWhatsap .wsp {
-      width: 165px;
+      width: 100%;
       height: 60px;
       display: flex;
       justify-content: center;
@@ -146,31 +131,926 @@ li {
       margin-bottom: 0;
       margin-left: 5px; }
 
-.rebajaP {
-  width: 100%;
-  height: 40px;
-  font-size: 17px;
-  text-align: center;
-  line-height: 30px;
-  color: #af8585;
-  background-color: #d6d5d5; }
-
-.grid {
+.containerinicio {
+  border: 2px solid black;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1, 1fr);
   grid-template-areas: "a1 n2 c3";
+  background-image: url(../img/img-inicio/fondo-ropa.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: none; }
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; }
+
+.a1, .n2, .c3 {
+  grid-area: a1;
+  width: auto;
+  height: 40px;
+  margin-top: 0;
+  margin-right: 10px;
+  margin-bottom: 0;
+  margin-left: 0;
+  font-size: 30px; }
+  .a1 a, .n2 a, .c3 a {
+    color: white; }
+  .a1 a:hover, .n2 a:hover, .c3 a:hover {
+    color: #8400ff; }
+
+.n2 {
+  grid-area: n2; }
+
+.c3 {
+  grid-area: c3; }
+
+.sDeporte {
+  width: 50%;
+  height: auto; }
+  .sDeporte .deporteImg {
+    width: 100%; }
+
+.indexImg {
+  width: 100%;
+  height: 100%;
+  border: 10px solid black; }
+
+.pagos {
+  width: 100%;
+  height: 35px;
+  background-image: url("https://cdn.solodeportes.com.ar/media/images/stores/1/banner_web_hasta_6_cuotas.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-top: 10px;
+  margin-right: 0;
+  margin-bottom: 20px;
+  margin-left: 0; }
+
+.phone {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 2px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #834f4f; }
+
+.viejoTel {
+  width: auto;
+  height: auto;
+  background-color: #b2b2b2;
+  margin-top: 10px;
+  margin-right: 0;
+  margin-bottom: 20px;
+  margin-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: none; }
+
+.whatsapp {
+  width: 20px;
+  height: 20px;
+  margin-top: 0;
+  margin-right: 8px;
+  margin-bottom: 0;
+  margin-left: 0; }
+
+h4 {
+  width: 18%;
+  height: auto;
+  text-align: center;
+  font-size: 30px; }
+
+.redesSociales {
+  width: auto;
+  height: auto;
+  background-color: #b2b2b2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 10px; }
+  .redesSociales .fb {
+    width: auto;
+    height: auto;
+    margin-left: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+    .redesSociales .fb .fb:hover {
+      transition: 1;
+      box-shadow: 8px 8px 24px 0px;
+      color: #f70000; }
+    .redesSociales .fb .redesImg {
+      width: 50px;
+      height: 50px;
+      background-size: cover; }
+
+.tiendaListax {
+  display: grid;
+  grid-template-columns: repeat(2, 20% 80%);
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-areas: "tiendaAncla tiendaImg"; }
+  .tiendaListax .tiendaAncla {
+    grid-area: tiendaAncla;
+    width: 100%;
+    height: 100%;
+    background-color: #b8b8b8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: none; }
+    .tiendaListax .tiendaAncla a {
+      color: #f14141;
+      font-size: 28px; }
+    .tiendaListax .tiendaAncla .ancla:hover {
+      width: auto;
+      height: auto;
+      transition: 1;
+      box-shadow: 8px 8px 24px 0px;
+      color: black; }
+    .tiendaListax .tiendaAncla .ancla2:hover {
+      color: black; }
+  .tiendaListax .tiendaImg {
+    grid-area: tiendaImg;
+    width: 100%;
+    height: 100%; }
+
+.tiendaDiv {
+  width: 100%;
+  height: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: none; }
+  .tiendaDiv .tiendaElegir {
+    width: 550px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: none;
+    font-size: 40px;
+    background-color: rgba(168, 98, 49, 0.58);
+    color: #000000;
+    box-shadow: -2px 3px 29px 21px black;
+    -webkit-box-shadow: -2px 3px 29px 21px black;
+    -moz-box-shadow: -2px 3px 29px 21px black; }
+
+.containerSexo {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: none; }
+  .containerSexo .boxGrids {
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: "boxMujer boxN boxHombre";
+    justify-content: center;
+    align-items: center;
+    flex-wrap: none;
+    background-color: #161616; }
+    .containerSexo .boxGrids .boxMujer {
+      grid-area: boxMujer;
+      width: 85%;
+      height: auto;
+      justify-self: center;
+      align-self: center; }
+    .containerSexo .boxGrids .imgMujer {
+      width: 100%;
+      height: auto; }
+    .containerSexo .boxGrids .boxMujer:hover {
+      transition: 1;
+      box-shadow: 8px 8px 15px 15px;
+      color: white; }
+  .containerSexo .boxN {
+    grid-area: boxN;
+    font-size: 50px;
+    color: red;
+    text-align: center;
+    font-style: italic;
+    width: 70%;
+    height: 90%;
+    justify-self: center;
+    align-self: center; }
+  .containerSexo .imgA {
+    width: 100%;
+    height: auto; }
+  .containerSexo .boxHombre {
+    grid-area: boxHombre;
+    width: 85%;
+    height: auto; }
+  .containerSexo .imgHombre {
+    width: 100%;
+    height: auto; }
+  .containerSexo .boxHombre:hover {
+    transition: 1;
+    box-shadow: 8px 8px 15px 15px;
+    color: white; }
+
+main {
+  background-color: #958d96; }
+
+.gridcars {
+  width: 100%;
+  height: 1000px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "cars1 cars2 cars3" "cars4 cars5 cars6";
+  justify-content: center;
+  align-items: center;
+  flex-wrap: none;
+  gap: 20px; }
+
+.cars1, .cars2, .cars3, .cars4, .cars5, .cars6 {
+  width: 240px;
+  height: 220px;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 50px;
+  margin-left: 0;
+  justify-self: center;
+  align-self: center;
+  background-color: white;
+  -webkit-box-shadow: inset 0px 0px 20px 32px black;
+  -moz-box-shadow: inset 0px 0px 20px 32px black;
+  box-shadow: inset 0px 0px 20px 32px black; }
+
+.cars2 {
+  grid-area: cars2; }
+
+.cars3 {
+  grid-area: cars3; }
+
+.cars4 {
+  grid-area: cars4;
+  margin-top: 50px; }
+
+.cars5 {
+  grid-area: cars5;
+  margin-top: 50px; }
+
+.cars6 {
+  grid-area: cars6;
+  margin-top: 50px; }
+
+img {
+  width: 110px;
+  height: auto; }
+
+.carrito-1 {
+  height: auto;
+  width: auto; }
+
+.producto {
+  margin-top: 4px;
+  font-size: 20px;
+  text-align: center;
+  outline-style: double;
+  background-color: white; }
+  .producto .precio {
+    color: #d62727;
+    font-size: 30px; }
+
+.containerDescuento {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: none; }
+  .containerDescuento .precioDescuento {
+    font-size: 15px;
+    text-decoration: line-through; }
+  .containerDescuento .descuentoOff {
+    background-color: green;
+    text-transform: uppercase; }
+
+.comprar {
+  width: auto;
+  height: auto;
+  background-color: white;
+  margin-top: 7px;
+  margin-right: 0;
+  margin-bottom: 50px;
+  margin-left: 0;
+  outline-style: double;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: none;
+  flex-wrap: none; }
+  .comprar button {
+    color: white;
+    background-color: #5e4747; }
+
+.carsAnimation {
+  width: 240px;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-animation-name: zoomInDown;
+  animation-name: zoomInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+@-webkit-keyframes zoomInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+
+@keyframes zoomInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+
+.containerForm {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: none; }
+  .containerForm .form {
+    width: 290px;
+    height: 195;
+    border-style: outset;
+    background: linear-gradient(45deg, #cf8c8c, transparent);
+    color: black;
+    text-align: center;
+    line-height: 2; }
+  .containerForm .consulta {
+    width: 245px;
+    height: 100px;
+    text-align: center; }
+
+.containerH1 {
+  width: 100%;
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: none; }
+  .containerH1 h1 {
+    font-size: 40px;
+    color: bisque;
+    outline: outset; }
+
+.compraTitle {
+  width: 600px;
+  height: auto;
+  font-size: 40px;
   margin-top: 50px;
   margin-right: 0;
   margin-bottom: 0;
+  margin-left: 0;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase; }
+
+.compraTexto {
+  width: auto;
+  height: 380px;
+  text-align: center; }
+  .compraTexto .compraParrafo {
+    background-color: white;
+    text-transform: uppercase; }
+
+.sucursalMaps {
+  font-size: 40px;
+  width: 600px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-wrap: none;
+  margin-top: 50px;
+  margin-right: 0;
+  margin-bottom: 5px;
   margin-left: 0; }
-  .grid .box {
+  .sucursalMaps .sucuParrafo {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: underline; }
+
+@media (max-width: 768px) {
+  body {
+    background-color: #d4d4d4; }
+  .containerHeader {
+    width: 100%;
+    height: auto;
+    background-color: #a53434;
+    justify-content: initial;
+    align-items: initial;
+    flex-wrap: wrap; }
+    .containerHeader .containerLogo {
+      display: none; }
+    .containerHeader .containerCompra {
+      width: 150px;
+      height: 60px; }
+      .containerHeader .containerCompra .compra {
+        width: 150px;
+        height: 40px; }
+      .containerHeader .containerCompra .compra:hover {
+        transition: none;
+        box-shadow: none;
+        color: none; }
+      .containerHeader .containerCompra .aCompra {
+        color: white; }
+      .containerHeader .containerCompra .aCompra {
+        font-size: 20px; }
+    .containerHeader .containerSucursal {
+      width: 150px;
+      height: 60px; }
+      .containerHeader .containerSucursal .aSucursal {
+        width: 0px;
+        height: 38px;
+        font-size: 20px;
+        color: white; }
+        .containerHeader .containerSucursal .aSucursal .sucursal:hover {
+          transition: none;
+          box-shadow: none;
+          color: black; }
+          .containerHeader .containerSucursal .aSucursal .sucursal:hover .aSucursal:hover {
+            color: white; }
+    .containerHeader .containerEnvio {
+      display: none; }
+    .containerHeader .containerWhatsap {
+      width: 345px;
+      height: 45px;
+      font-size: 20px;
+      display: flex;
+      justify-content: end;
+      align-items: none;
+      flex-wrap: none;
+      margin-top: 0;
+      margin-right: 0;
+      margin-bottom: 0;
+      margin-left: 0; }
+      .containerHeader .containerWhatsap .wsp {
+        width: auto;
+        height: 25px;
+        margin-left: 2px; }
+        .containerHeader .containerWhatsap .wsp .phone {
+          color: white; } }
+
+@media (max-width: 768px) {
+  .gridcars {
+    width: 100%;
+    height: 1280px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "cars1 cars2" "cars3 cars4" "cars5 cars6";
+    justify-content: center;
+    align-items: center;
+    flex-wrap: none;
+    gap: 0px; }
+  .cars1, .cars2, .cars3, .cars4, .cars5, .cars6 {
+    width: 240px;
+    height: 220px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 50px;
+    margin-left: 0;
+    justify-self: center;
+    align-self: center;
+    background-color: #ededed;
+    -webkit-box-shadow: inset 0px 0px 20px 32px black;
+    -moz-box-shadow: inset 0px 0px 20px 32px black;
+    box-shadow: inset 0px 0px 20px 32px black; }
+  .cars2 {
+    grid-area: cars2; }
+  .cars3 {
+    grid-area: cars3; }
+  .cars4 {
+    grid-area: cars4; }
+  .cars5 {
+    grid-area: cars5; }
+  .cars6 {
+    grid-area: cars6; }
+  img {
+    width: 110px;
+    height: auto; }
+  .carrito-1 {
+    height: auto;
+    width: auto; }
+  .producto {
+    margin-top: 4px;
+    font-size: 20px;
+    text-align: center;
+    outline-style: double;
+    background-color: white; }
+    .producto .precio {
+      color: #d62727;
+      font-size: 30px; }
+  .containerDescuento {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: none; }
+    .containerDescuento .precioDescuento {
+      font-size: 15px;
+      text-decoration: line-through; }
+    .containerDescuento .descuentoOff {
+      background-color: green;
+      text-transform: uppercase; }
+  .comprar {
     width: auto;
-    height: 50px;
-    text-align: center; }
-  .grid .box:hover {
-    background-color: #4d4db6; }
-  .grid .a1 {
+    height: auto;
+    background-color: white;
+    margin-top: 7px;
+    margin-right: 0;
+    margin-bottom: 50px;
+    margin-left: 0;
+    outline-style: double;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: none;
+    flex-wrap: none; }
+    .comprar button {
+      color: white;
+      background-color: #5e4747; } }
+
+@media (max-width: 768px) {
+  .containerinicio {
+    height: 340px;
+    border: 3px solid black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "sDeporte sDeporte sDeporte" "a1 n2 c3";
+    background-image: url(../img/img-inicio/fondo-ropa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right; }
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 40px; }
+  .a1, .n2, .c3 {
     grid-area: a1;
     width: auto;
-    height: 50px; }
+    height: 40px;
+    margin-top: 0;
+    margin-right: 10px;
+    margin-bottom: 0;
+    margin-left: 0;
+    font-size: 30px; }
+    .a1 a, .n2 a, .c3 a {
+      color: white; }
+    .a1 a:hover, .n2 a:hover, .c3 a:hover {
+      color: white; }
+  .n2 {
+    grid-area: n2; }
+  .c3 {
+    grid-area: c3; }
+  .sDeporte {
+    grid-area: sDeporte;
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-self: center; }
+    .sDeporte .deporteImg {
+      width: 100%;
+      height: auto; }
+  .tiendaListax {
+    display: grid;
+    grid-template-columns: repeat(2, 30% 70%);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: "tiendaAncla tiendaImg"; }
+    .tiendaListax .tiendaAncla {
+      grid-area: tiendaAncla;
+      width: 100%;
+      height: 100%;
+      background-color: #b8b8b8;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: none; }
+      .tiendaListax .tiendaAncla a {
+        color: black;
+        font-size: 28px; }
+      .tiendaListax .tiendaAncla .ancla:hover {
+        width: auto;
+        height: auto;
+        transition: none;
+        box-shadow: none; }
+      .tiendaListax .tiendaAncla .ancla2:hover {
+        color: black; }
+    .tiendaListax .tiendaImg {
+      grid-area: tiendaImg;
+      width: 100%;
+      height: 100%; }
+  .tiendaDiv {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: none; }
+    .tiendaDiv .tiendaElegir {
+      width: 370px;
+      height: 130px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: none;
+      font-size: 28px;
+      background-color: rgba(168, 98, 49, 0.58);
+      color: #000000;
+      box-shadow: -2px 3px 29px 21px black;
+      -webkit-box-shadow: -2px 3px 29px 21px black;
+      -moz-box-shadow: -2px 3px 29px 21px black; }
+  .containerSexo {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: none; }
+    .containerSexo .boxGrids {
+      width: 80%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      grid-template-areas: "boxMujer boxHombre";
+      justify-content: center;
+      align-items: center;
+      flex-wrap: none;
+      background-color: #161616; }
+      .containerSexo .boxGrids .boxMujer {
+        grid-area: boxMujer;
+        width: 85%;
+        height: auto;
+        justify-self: center;
+        align-self: center; }
+      .containerSexo .boxGrids .imgMujer {
+        width: 100%;
+        height: auto; }
+      .containerSexo .boxGrids .boxMujer:hover {
+        transition: none;
+        box-shadow: none; }
+    .containerSexo .boxN {
+      display: none; }
+    .containerSexo .boxHombre {
+      grid-area: boxHombre;
+      width: 85%;
+      height: auto; }
+    .containerSexo .imgHombre {
+      width: 100%;
+      height: auto; }
+    .containerSexo .boxHombre:hover {
+      transition: none;
+      box-shadow: none; }
+  .iframe {
+    width: 100%;
+    height: 300px; } }
+
+@media (max-width: 360px) {
+  .gridcars {
+    width: 100%;
+    height: 2580px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "cars1" "cars2" "cars3" "cars4" "cars5" "cars6";
+    justify-content: center;
+    align-items: center;
+    flex-wrap: none;
+    gap: 0px; }
+  .cars1, .cars2, .cars3, .cars4, .cars5, .cars6 {
+    width: 240px;
+    height: 220px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 50px;
+    margin-left: 0;
+    justify-self: center;
+    align-self: center;
+    background-color: #ededed;
+    -webkit-box-shadow: inset 0px 0px 20px 32px black;
+    -moz-box-shadow: inset 0px 0px 20px 32px black;
+    box-shadow: inset 0px 0px 20px 32px black; }
+  .cars2 {
+    grid-area: cars2; }
+  .cars3 {
+    grid-area: cars3; }
+  .cars4 {
+    grid-area: cars4; }
+  .cars5 {
+    grid-area: cars5; }
+  .cars6 {
+    grid-area: cars6; }
+  img {
+    width: 110px;
+    height: auto; }
+  .carrito-1 {
+    height: auto;
+    width: auto; }
+  .producto {
+    margin-top: 4px;
+    font-size: 20px;
+    text-align: center;
+    outline-style: double;
+    background-color: white; }
+    .producto .precio {
+      color: #d62727;
+      font-size: 30px; }
+  .containerDescuento {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: none; }
+    .containerDescuento .precioDescuento {
+      font-size: 15px;
+      text-decoration: line-through; }
+    .containerDescuento .descuentoOff {
+      background-color: green;
+      text-transform: uppercase; }
+  .comprar {
+    width: auto;
+    height: auto;
+    background-color: white;
+    margin-top: 7px;
+    margin-right: 0;
+    margin-bottom: 50px;
+    margin-left: 0;
+    outline-style: double;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: none;
+    flex-wrap: none; }
+    .comprar button {
+      color: white;
+      background-color: #5e4747; } }
+
+@media (max-width: 360px) {
+  .tiendaListax {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "tiendaImg" "tiendaAncla"; }
+    .tiendaListax .tiendaAncla {
+      grid-area: tiendaAncla;
+      width: 100%;
+      height: 100%;
+      background-color: #b9baff;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: none; }
+      .tiendaListax .tiendaAncla a {
+        color: black;
+        font-size: 20px;
+        background-color: azure; }
+      .tiendaListax .tiendaAncla .ancla:hover {
+        width: auto;
+        height: auto;
+        transition: none;
+        box-shadow: none; }
+      .tiendaListax .tiendaAncla .ancla2:hover {
+        color: black; }
+    .tiendaListax .tiendaImg {
+      grid-area: tiendaImg;
+      width: 100%;
+      height: 100%; }
+  .tiendaDiv {
+    width: 100%;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: none; }
+    .tiendaDiv .tiendaElegir {
+      width: 285px;
+      height: 90px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: none;
+      font-size: 22px;
+      background-color: #b9baff;
+      color: #000000;
+      box-shadow: -2px 3px 29px 21px black;
+      -webkit-box-shadow: -2px 3px 29px 21px black;
+      -moz-box-shadow: -2px 3px 29px 21px black; }
+  .containerSexo {
+    width: 100%;
+    height: 115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: none; }
+    .containerSexo .boxGrids {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      grid-template-areas: "boxMujer boxHombre";
+      justify-content: center;
+      align-items: center;
+      flex-wrap: none;
+      background-color: black; }
+      .containerSexo .boxGrids .boxMujer {
+        grid-area: boxMujer;
+        width: 95%;
+        height: auto;
+        justify-self: initial;
+        align-self: flex-start; }
+      .containerSexo .boxGrids .imgMujer {
+        width: 100%;
+        height: auto; }
+      .containerSexo .boxGrids .boxMujer:hover {
+        transition: none;
+        box-shadow: none; }
+    .containerSexo .boxN {
+      display: none; }
+    .containerSexo .boxHombre {
+      grid-area: boxHombre;
+      width: 95%;
+      height: auto;
+      justify-self: end;
+      align-self: flex-start; }
+    .containerSexo .imgHombre {
+      width: 100%;
+      height: auto; }
+    .containerSexo .boxHombre:hover {
+      transition: none;
+      box-shadow: none; } }
+
+@media (max-width: 360px) {
+  .sucursalMaps {
+    font-size: 28px;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: none;
+    flex-wrap: none;
+    margin-top: 50px;
+    margin-right: 0;
+    margin-bottom: 5px;
+    margin-left: 0; }
+    .sucursalMaps .sucuParrafo {
+      color: black;
+      text-transform: uppercase;
+      text-decoration: underline; }
+  .compraTitle {
+    width: 360px;
+    height: auto;
+    font-size: 28px;
+    margin-top: 40px;
+    margin-right: 0;
+    margin-bottom: 5px;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    text-decoration: underline; }
+  .compraTexto {
+    width: auto;
+    height: auto;
+    text-align: center; }
+    .compraTexto .compraParrafo {
+      background-color: white;
+      text-transform: uppercase; } }

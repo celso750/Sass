@@ -1,0 +1,60 @@
+.pagos {
+    @include tamaños(100%, 35px);
+    @include background-img(url("https://cdn.solodeportes.com.ar/media/images/stores/1/banner_web_hasta_6_cuotas.jpg"), no-repeat, contain, center);
+    @include margin(10px, 0, 20px, 0);
+}
+
+.phone {
+    @include margin(0, 0, 0, 2px);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: $font-size-aten-cliente-rebaja;
+    color: $color-letra-aten-cliente-rebaja;
+}
+
+.viejoTel {
+    @include tamaños(auto, auto);
+    background-color: $background-aten-cliente-rebaja;
+    @include margin(10px, 0, 20px, 0);
+    display: flex;
+    @include prop-flex (center, center, none);
+}
+
+.whatsapp {
+    @include tamaños(20px, 20px);
+    @include margin(0, 8px, 0, 0)
+}
+
+h4 {
+    @include tamaños(18%, auto);
+    text-align: center;
+    font-size: 30px;
+}
+
+.redesSociales {
+    @include tamaños(auto, auto);
+    background-color: $background-aten-cliente-rebaja;
+    display: flex;
+    @include prop-flex(flex-start, center, wrap);
+    gap: 18px;
+    margin-top: 10px;
+
+    .fb {
+        @include tamaños (auto, auto);
+        margin-left: 3px;
+        display: flex;
+        @include prop-flex (center, center, wrap);
+
+        .fb:hover {
+            transition: 1;
+            box-shadow: 8px 8px 24px 0px;
+            color: #f70000;
+        }
+
+        .redesImg {
+            @include tamaños (50px, 50px);
+            background-size: cover;
+        }
+    }
+
+}

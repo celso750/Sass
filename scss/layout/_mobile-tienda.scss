@@ -1,0 +1,159 @@
+@media (max-width:360px) { 
+    .tiendaListax {
+        @include grid (1fr, repeat(2, 1fr), "tiendaImg" "tiendaAncla");
+        .tiendaAncla {
+            grid-area: tiendaAncla;
+            @include tamaños (100%, 100%);
+            background-color: #b9baff;
+            display: flex;
+            flex-direction: row;
+            @include prop-flex(space-around, center, none);
+            a {
+                color: black;
+                font-size: 20px;
+                background-color: azure;
+            }
+            .ancla:hover {
+                @include tamaños (auto, auto);
+                transition: none;
+                box-shadow: none;
+            }
+            .ancla2:hover {
+                color: black;
+            }
+        }
+        .tiendaImg {
+            grid-area: tiendaImg;
+            @include tamaños (100%, 100%);
+        }
+    }
+    .tiendaDiv {
+        @include tamaños(100%, 170px);
+        display: flex;
+        @include prop-flex(center, center, none);
+        .tiendaElegir {
+            @include tamaños(285px, 90px);
+            display: flex;
+            @include prop-flex(center, center, none);
+            font-size: 22px;
+            background-color:  #b9baff;
+            color: $color-letra-titulo-tienda;
+            box-shadow: -2px 3px 29px 21px rgba(0, 0, 0, 1);
+            -webkit-box-shadow: -2px 3px 29px 21px rgba(0, 0, 0, 1);
+            -moz-box-shadow: -2px 3px 29px 21px rgba(0, 0, 0, 1);
+        }
+    }
+
+    .containerSexo {
+        @include tamaños(100%, 115px);
+        display: flex;
+        @include prop-flex(center, center, none);
+        .boxGrids {
+            @include tamaños(100%, 100%);
+            @include grid(repeat(2, 1fr), repeat(1, 1fr), "boxMujer boxHombre");
+            @include prop-flex(center, center, none);
+            background-color: rgb(0, 0, 0);
+            .boxMujer {
+                grid-area: boxMujer;
+                @include tamaños(95%, auto);
+                @include prop-flex-self(initial, flex-start);
+            }
+            .imgMujer {
+                @include tamaños (100%, auto);
+            }
+            .boxMujer:hover {
+                transition: none;
+                box-shadow: none;
+            }
+        }
+        .boxN {
+            display:  none;
+        }
+        .boxHombre {
+            grid-area: boxHombre;
+            @include tamaños(95%, auto);
+            @include prop-flex-self(end, flex-start);
+        }
+        .imgHombre {
+            @include tamaños(100%, auto);
+        }
+        .boxHombre:hover {
+            transition: none;
+            box-shadow:none;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}  

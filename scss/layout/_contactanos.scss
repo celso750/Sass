@@ -1,0 +1,61 @@
+
+
+.containerForm {
+    width: 100%;
+    display: flex;
+    @include prop-flex(center, center, none);
+    .form {
+        @include tamaños(290px, 195);
+        border-style: outset;
+        background: linear-gradient(45deg, #cf8c8c, transparent);
+        color: black;
+        text-align: center;
+        line-height: 2;
+    }
+
+    .consulta {
+        @include tamaños(245px, 100px);
+        text-align: center;
+    }
+}
+.containerH1 {
+    @include tamaños(100%, 125px);
+    display: flex;
+    @include prop-flex(center, center, none);
+    h1 {
+        font-size: 40px;
+        color: bisque;
+        outline: outset;
+    }
+}
+.compraTitle {
+    @include tamaños(600px, auto);
+    font-size: 40px;
+    @include margin(50px, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.compraTexto {
+    width: auto;
+    height: 380px;
+    text-align: center;
+    .compraParrafo {
+        background-color: white;
+        text-transform: uppercase;
+    }
+}
+
+.sucursalMaps {
+    font-size: 40px;
+    @include tamaños(600px, auto);
+    display: flex;
+    @include prop-flex(center, none, none);
+    @include margin(50px, 0, 5px, 0);
+    .sucuParrafo {
+        color: black;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+}

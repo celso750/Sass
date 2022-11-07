@@ -1,0 +1,110 @@
+.tiendaListax {
+    @include grid (repeat(2, 20% 80%), repeat(1, 1fr), "tiendaAncla tiendaImg");
+
+    .tiendaAncla {
+        grid-area: tiendaAncla;
+        @include tamaños (100%, 100%);
+        background-color: $background-nav-tienda;
+        display: flex;
+        flex-direction: column;
+        @include prop-flex(space-between, center, none);
+
+        a {
+            color: $color-letra-ancla-tienda;
+            font-size: $font-size-tienda;
+        }
+
+        .ancla:hover {
+            @include tamaños (auto, auto);
+            transition: 1;
+            box-shadow: 8px 8px 24px 0px;
+            color: $color-sombra-tienda;
+        }
+
+        .ancla2:hover {
+            color: $color-hover-letra-tienda;
+        }
+    }
+
+    .tiendaImg {
+        grid-area: tiendaImg;
+        @include tamaños (100%, 100%);
+    }
+}
+
+.tiendaDiv {
+    @include tamaños(100%, 260px);
+    display: flex;
+    @include prop-flex(center, center, none);
+
+    .tiendaElegir {
+        @include tamaños(550px, 160px);
+        display: flex;
+        @include prop-flex(center, center, none);
+        font-size: $font-size-titulo_tienda;
+        background-color: $background-titulo-tienda;
+        color: $color-letra-titulo-tienda;
+        box-shadow: -2px 3px 29px 21px rgba(0, 0, 0, 1);
+        -webkit-box-shadow: -2px 3px 29px 21px rgba(0, 0, 0, 1);
+        -moz-box-shadow: -2px 3px 29px 21px rgba(0, 0, 0, 1);
+    }
+}
+
+.containerSexo {
+    @include tamaños(100%, 450px);
+    display: flex;
+    @include prop-flex(center, center, none);
+
+    .boxGrids {
+        @include tamaños(80%, 100%);
+        @include grid(repeat(3, 1fr), repeat(1, 1fr), "boxMujer boxN boxHombre");
+        @include prop-flex(center, center, none);
+        background-color: $background-tienda-sexo;
+
+        .boxMujer {
+            grid-area: boxMujer;
+            @include tamaños(85%, auto);
+
+            @include prop-flex-self(center, center);
+        }
+
+        .imgMujer {
+            @include tamaños (100%, auto);
+        }
+
+        .boxMujer:hover {
+            transition: 1;
+            box-shadow: 8px 8px 15px 15px;
+            color: $sombra-tienda-sexo;
+        }
+    }
+
+    .boxN {
+        grid-area: boxN;
+        font-size: 50px;
+        color: red;
+        text-align: center;
+        font-style: italic;
+        @include tamaños(70%, 90%);
+        @include prop-flex-self(center, center)
+    }
+
+    .imgA {
+        @include tamaños(100%, auto);
+    }
+
+    .boxHombre {
+        grid-area: boxHombre;
+        @include tamaños(85%, auto);
+    }
+
+    .imgHombre {
+        @include tamaños(100%, auto);
+    }
+
+    .boxHombre:hover {
+        transition: 1;
+        box-shadow: 8px 8px 15px 15px;
+        color: $sombra-tienda-sexo;
+    }
+}
