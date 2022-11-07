@@ -1,0 +1,64 @@
+@media (max-width:576px) { 
+
+
+.containerHeader {
+        @include tamaños(100%, auto);
+        background-color: rgb(127, 131, 131);
+        @include prop-flex(initial, initial, wrap);
+        .containerLogo {
+            display: none;
+        }
+
+        .containerCompra {
+            @include tamaños(244px, 60px);
+            .compra {
+                @include tamaños (200px, 40px);
+            }
+            .compra:hover {
+                transition: none;
+                box-shadow: none;
+                color: none;
+            }
+            .aCompra{
+                color:$color-letra-header-tablet;    
+                font-size: $font-size-tablet;
+            }
+        }
+.containerSucursal{
+    @include tamaños(205px,60px);
+    .sucursal{
+        width: 170px;
+        height: 60px;} 
+    .aSucursal{
+        @include tamaños(0px,38px); 
+        font-size: $font-size-tablet;
+        color: $color-letra-header-tablet;
+        }
+.sucursal:hover {
+            transition: none;
+            box-shadow: none;
+            color: none;}
+.aSucursal:hover {
+            color: none;}
+        } 
+
+        
+.containerEnvio{
+    display: none;
+}
+.containerWhatsap{
+    @include tamaños(340px,45px);
+    display: flex;
+    @include prop-flex(end,none,none);
+    @include margin(0,0,0,0);
+.wsp{
+    @include tamaños(auto,25px);
+    margin-left: 2px;
+    .phone{
+        color:$color-letra-header-tablet;
+        font-size: 13px;
+    }
+}
+}
+}
+}

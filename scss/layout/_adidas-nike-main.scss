@@ -1,5 +1,5 @@
 .tiendaListax {
-    @include grid (repeat(2, 20% 80%), repeat(1, 1fr), "tiendaAncla tiendaImg");
+    @include grid (repeat(2, 80% 20%), repeat(1, 1fr), "tiendaAncla tiendaImg");
 
     .tiendaAncla {
         grid-area: tiendaAncla;

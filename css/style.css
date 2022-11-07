@@ -181,7 +181,7 @@ li {
 
 .pagos {
   width: 100%;
-  height: 35px;
+  height: 44px;
   background-image: url("https://cdn.solodeportes.com.ar/media/images/stores/1/banner_web_hasta_6_cuotas.jpg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -257,7 +257,7 @@ h4 {
 
 .tiendaListax {
   display: grid;
-  grid-template-columns: repeat(2, 20% 80%);
+  grid-template-columns: repeat(2, 80% 20%);
   grid-template-rows: repeat(1, 1fr);
   grid-template-areas: "tiendaAncla tiendaImg"; }
   .tiendaListax .tiendaAncla {
@@ -591,14 +591,14 @@ img {
       .containerHeader .containerCompra .aCompra {
         color: white; }
       .containerHeader .containerCompra .aCompra {
-        font-size: 20px; }
+        font-size: 23px; }
     .containerHeader .containerSucursal {
       width: 150px;
       height: 60px; }
       .containerHeader .containerSucursal .aSucursal {
         width: 0px;
         height: 38px;
-        font-size: 20px;
+        font-size: 23px;
         color: white; }
         .containerHeader .containerSucursal .aSucursal .sucursal:hover {
           transition: none;
@@ -611,7 +611,7 @@ img {
     .containerHeader .containerWhatsap {
       width: 345px;
       height: 45px;
-      font-size: 20px;
+      font-size: 23px;
       display: flex;
       justify-content: end;
       align-items: none;
@@ -751,16 +751,16 @@ img {
       height: auto; }
   .tiendaListax {
     display: grid;
-    grid-template-columns: repeat(2, 30% 70%);
-    grid-template-rows: repeat(1, 1fr);
-    grid-template-areas: "tiendaAncla tiendaImg"; }
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "tiendaImg" "tiendaAncla"; }
     .tiendaListax .tiendaAncla {
       grid-area: tiendaAncla;
       width: 100%;
       height: 100%;
       background-color: #b8b8b8;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: space-between;
       align-items: center;
       flex-wrap: none; }
@@ -786,7 +786,7 @@ img {
     align-items: center;
     flex-wrap: none; }
     .tiendaDiv .tiendaElegir {
-      width: 370px;
+      width: 359px;
       height: 130px;
       display: flex;
       justify-content: center;
@@ -844,7 +844,7 @@ img {
     width: 100%;
     height: 300px; } }
 
-@media (max-width: 360px) {
+@media (max-width: 576px) {
   .gridcars {
     width: 100%;
     height: 2580px;
@@ -922,7 +922,7 @@ img {
       color: white;
       background-color: #5e4747; } }
 
-@media (max-width: 360px) {
+@media (max-width: 576px) {
   .tiendaListax {
     display: grid;
     grid-template-columns: 1fr;
@@ -932,7 +932,7 @@ img {
       grid-area: tiendaAncla;
       width: 100%;
       height: 100%;
-      background-color: #b9baff;
+      background-color: #7f8383;
       display: flex;
       flex-direction: row;
       justify-content: space-around;
@@ -940,8 +940,8 @@ img {
       flex-wrap: none; }
       .tiendaListax .tiendaAncla a {
         color: black;
-        font-size: 20px;
-        background-color: azure; }
+        font-size: 23px;
+        background-color: #a0cece; }
       .tiendaListax .tiendaAncla .ancla:hover {
         width: auto;
         height: auto;
@@ -961,7 +961,7 @@ img {
     align-items: center;
     flex-wrap: none; }
     .tiendaDiv .tiendaElegir {
-      width: 285px;
+      width: 340px;
       height: 90px;
       display: flex;
       justify-content: center;
@@ -975,7 +975,7 @@ img {
       -moz-box-shadow: -2px 3px 29px 21px black; }
   .containerSexo {
     width: 100%;
-    height: 115px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -990,7 +990,7 @@ img {
       justify-content: center;
       align-items: center;
       flex-wrap: none;
-      background-color: black; }
+      background-color: white; }
       .containerSexo .boxGrids .boxMujer {
         grid-area: boxMujer;
         width: 95%;
@@ -1018,7 +1018,7 @@ img {
       transition: none;
       box-shadow: none; } }
 
-@media (max-width: 360px) {
+@media (max-width: 576px) {
   .sucursalMaps {
     font-size: 28px;
     width: auto;
@@ -1053,4 +1053,68 @@ img {
     text-align: center; }
     .compraTexto .compraParrafo {
       background-color: white;
-      text-transform: uppercase; } }
+      text-transform: uppercase; }
+  .iframe {
+    width: 100%;
+    height: 300px; } }
+
+@media (max-width: 576px) {
+  .containerHeader {
+    width: 100%;
+    height: auto;
+    background-color: #7f8383;
+    justify-content: initial;
+    align-items: initial;
+    flex-wrap: wrap; }
+    .containerHeader .containerLogo {
+      display: none; }
+    .containerHeader .containerCompra {
+      width: 244px;
+      height: 60px; }
+      .containerHeader .containerCompra .compra {
+        width: 200px;
+        height: 40px; }
+      .containerHeader .containerCompra .compra:hover {
+        transition: none;
+        box-shadow: none;
+        color: none; }
+      .containerHeader .containerCompra .aCompra {
+        color: white;
+        font-size: 23px; }
+    .containerHeader .containerSucursal {
+      width: 205px;
+      height: 60px; }
+      .containerHeader .containerSucursal .sucursal {
+        width: 170px;
+        height: 60px; }
+      .containerHeader .containerSucursal .aSucursal {
+        width: 0px;
+        height: 38px;
+        font-size: 23px;
+        color: white; }
+      .containerHeader .containerSucursal .sucursal:hover {
+        transition: none;
+        box-shadow: none;
+        color: none; }
+      .containerHeader .containerSucursal .aSucursal:hover {
+        color: none; }
+    .containerHeader .containerEnvio {
+      display: none; }
+    .containerHeader .containerWhatsap {
+      width: 340px;
+      height: 45px;
+      display: flex;
+      justify-content: end;
+      align-items: none;
+      flex-wrap: none;
+      margin-top: 0;
+      margin-right: 0;
+      margin-bottom: 0;
+      margin-left: 0; }
+      .containerHeader .containerWhatsap .wsp {
+        width: auto;
+        height: 25px;
+        margin-left: 2px; }
+        .containerHeader .containerWhatsap .wsp .phone {
+          color: white;
+          font-size: 13px; } }

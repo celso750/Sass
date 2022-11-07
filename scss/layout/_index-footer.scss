@@ -1,5 +1,5 @@
 .pagos {
-    @include tamaños(100%, 35px);
+    @include tamaños(100%, 44px);
     @include background-img(url("https://cdn.solodeportes.com.ar/media/images/stores/1/banner_web_hasta_6_cuotas.jpg"), no-repeat, contain, center);
     @include margin(10px, 0, 20px, 0);
 }
